@@ -1,5 +1,6 @@
 package eci.selfClips.web.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 class UserController {
 
-    @RequestMapping("/create")
+    @GetMapping("/create")
     public String createUser(){
         return "<h1>The API is working ok!</h1>";
     }
