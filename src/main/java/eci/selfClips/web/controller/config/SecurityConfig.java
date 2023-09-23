@@ -7,8 +7,8 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration
-@EnableMethodSecurity(securedEnabled = true)
+//@Configuration
+@EnableMethodSecurity(securedEnabled = false)
 public class SecurityConfig {
 
 

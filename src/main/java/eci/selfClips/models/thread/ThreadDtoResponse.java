@@ -1,20 +1,15 @@
-package eci.selfClips.repository.thread;
+package eci.selfClips.models.thread;
 
 import java.util.List;
 
-public class ThreadDto {
+public class ThreadDtoResponse {
 
     private String question;
     private List<String> tags;
     private Integer likes;
 
-    public ThreadDto() {
-        this.question = "";
-        this.tags = null;
-        this.likes = 0;
-    }
 
-    public ThreadDto(String question, List<String> tags, Integer likes) {
+    public ThreadDtoResponse(String question, List<String> tags, Integer likes) {
         this.question = question;
         this.tags = tags;
         this.likes = likes;
