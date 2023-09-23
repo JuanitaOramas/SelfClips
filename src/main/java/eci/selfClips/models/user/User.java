@@ -1,7 +1,7 @@
 package eci.selfClips.models.user;
 
-//import org.springframework.data.mongodb.core.mapping.Document;
-//import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.annotation.Id;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.io.Serializable;
@@ -13,7 +13,7 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-//    @Id
+    @Id
     private String id;
     private String name;
     private String lastName;
