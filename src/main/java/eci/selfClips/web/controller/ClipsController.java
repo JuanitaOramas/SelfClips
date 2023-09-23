@@ -28,4 +28,15 @@ class ClipsController {
         return ResponseEntity.ok(this.clipsService.save(clip));
     }
 
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Clip> deleteClip(@PathVariable("id") String clipId){
+        this.clipsService.deleteById(clipId);
+        return ResponseEntity.ok().build();
+    }
+
+    @PutMapping("/update/{id}")
+    public ResponseEntity<Clip> updateClip(@RequestBody Clip clip,@PathVariable("id") String clipId){
+        return ResponseEntity.ok(this.clipsService.update(clip, clipId));
+    }
+
 }
