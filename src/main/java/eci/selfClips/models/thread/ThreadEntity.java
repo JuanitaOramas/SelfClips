@@ -14,6 +14,9 @@ public class ThreadEntity implements Serializable {
     private List<String> tags;
     private Integer likes;
 
+    public ThreadEntity() {
+        // Constructor sin argumentos
+    }
 
     public ThreadEntity(String id, String question, List<String> tags, Integer likes) {
         this.id = id;
